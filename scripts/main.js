@@ -3,8 +3,9 @@
 const images = Array.from(document.querySelectorAll("img"));
 const infoContainers = Array.from(document.querySelectorAll(".image-info"));
 
-// Per obtenir el "pes" d'una imatge a JS podem fer servir el mètode fetch per obtenir la imatge com a blob i després obtenir la seva mida en bytes.
-// Més info sobre Blob --> https://es.javascript.info/blob
+// Per obtenir el "pes" d'una imatge a JS podem fer servir el mètode fetch per
+// obtenir la imatge com a blob i després obtenir la seva mida en bytes. Més
+// info sobre Blob --> https://es.javascript.info/blob
 
 async function getImageInfo(url) {
   return new Promise(async (resolve, reject) => {

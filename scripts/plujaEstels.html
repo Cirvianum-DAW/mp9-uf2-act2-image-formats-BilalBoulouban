@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Format Experiment</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header class="bg-blue-500 text-white text-center p-5">
+      <h1 class="text-4xl">Image Format Experiment</h1>
+    </header>
+    <nav class="bg-gray-800 text-white p-4">
+        <ul class="flex justify-around">
+            <li><a href="/index.html" class="hover:text-gray-300">Index</a></li>
+
+            <li><a href="/scripts/logotip.html" class="hover:text-gray-300">Logotip</a></li>
+            <li><a href="/scripts/postaDeSol.html" class="hover:text-gray-300">Posta</a></li>
+            <li><a href="/scripts/transparency.html" class="hover:text-gray-300">Transparency</a></li>
+        </ul>
+    </nav>
+    <main
+      class="text-base text-center p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5"
+    >
+      <div>
+        <img src="/images/aveure2.jpg" alt="Pluja Estels"  />
+        <div class="image-info"></div>
+      </div>
+      <div>
+        <img src="/images/pluja50.jpg" alt="Pluja Estels"  />
+        <div class="image-info"></div>
+      </div>
+      <div>
+        <img src="/images/plujaEstels.jpg" alt="Pluja Estels"  />
+        <div class="image-info"></div>
+      </div>
+      <div>
+        <img src="/images/image2.png" alt="Example 2.1"  />
+        <div class="image-info"></div>
+      </div>
+      <div>
+        <img src="/images/image2.gif" alt="Example 2.2"  />
+        <div class="image-info"></div>
+      </div>
+    </main>
+    <p><b>What format is the most optimal for this type of image and why?</b> 
+        The optimal format depends on the image type. For high-quality images with transparency, PNG is optimal.
+        For complex images without transparency, JPEG can be more suitable due to better compression.
+        GIF is good for simple animations.
+        <b>With what compression quality does the image not lose quality?</b> 
+        The compression quality that maintains image quality varies. For JPEG, a compression level of 70-80% generally maintains a good balance between size and quality.
+        <b>Can we reduce its size even more without losing quality?</b>
+        You can reduce the size further with optimization tools, but extreme compression may reduce quality.
+        <b>What would happen if we save the image several times with JPEG format?</b>
+        If you save an image multiple times in JPEG format, it will undergo 'generation loss', as JPEG is a lossy format. Each save reduces the quality of the image.
+    </p>
+    <script src="/scripts/main.js"></script>
+  </body>
+</html>
